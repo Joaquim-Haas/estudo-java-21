@@ -1,10 +1,14 @@
-package org.EstudoJava.BlocosIncializacao.test;
+package org.EstudoJava.BlocosInicializacao.test;
 
-import org.EstudoJava.BlocosIncializacao.domain.Anime;
+import org.EstudoJava.BlocosInicializacao.domain.Anime;
 
 public class AnimeTest01 {
     public static void main(String[] args) {
 
-        Anime anime01 = new Anime();
+        Anime anime01 = new Anime("One piece");
+
+        for(int episodio : anime01.getEpisodios()){
+            System.out.print(episodio + " ");
+        }
     }
 }
