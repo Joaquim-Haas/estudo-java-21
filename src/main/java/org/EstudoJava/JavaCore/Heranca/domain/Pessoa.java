@@ -9,6 +9,7 @@ public class Pessoa {
         System.out.println(this.nome);
         System.out.println(this.cpf);
         System.out.println(this.endereco.getRua() + " " + this.endereco.getCep());
+        System.out.println("-=-=-=-=-=-=-");
     }
 
     public String getNome() {

@@ -20,9 +20,9 @@ public class HerancaTest01 {
 
         //herança de pessoa > funcionario abaixo
 
-        Endereco endereco1 = new Endereco();
-        endereco.setRua("Rua Mabashi Street");
-        endereco.setCep("856755-478");
+        Endereco endereco1 = new Endereco(); //usar depois
+        endereco1.setRua("Rua Mabashi Street");
+        endereco1.setCep("856755-478");
 
         Funcionario funcionario = new Funcionario();
         funcionario.setNome("Makise Kurisu");
