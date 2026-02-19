@@ -1,9 +1,9 @@
 package org.EstudoJava.JavaCore.Heranca.domain;
 
 public class Pessoa {
-    private String nome;
-    private String cpf;
-    private Endereco endereco;
+    protected String nome;
+    protected String cpf;
+    protected Endereco endereco; //protect vira publico para outras subclasses
 
     public void imprime(){
         System.out.println(this.nome);
