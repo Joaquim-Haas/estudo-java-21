@@ -3,6 +3,7 @@ package org.EstudoJava.JavaCore.BlocosInicializacao.domain;
 public class Anime {
     private String nome;
     private int[] episodios;
+    //0 - Bloco de inicializacao estatico é executado quando JVM carregar classe
     //1 - Alocado espaco em memoria pro objeto
     //2 - cada artributo de classe e criado e inicializado com valores default ou o que for passado
     //3 - Bloco de inicializacao e executado

@@ -1,17 +1,23 @@
 package org.EstudoJava.JavaCore.Heranca.domain;
 
 public class Funcionario extends Pessoa{ //classe que extende de pessoa
-//    private String nome;
-//    private String cpf;
-//    private Endereco endereco;
-// não é necessario setters e getters de Pessoa novamente, pois está "extendendo"
-// Funcionario e subclasse de Pessoa
-// ou usar @Override
 
     private double salario;
 
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de funcionario");
+    }
+
+    {
+        System.out.println("Dentro do bloco de incialização de funcionario 1");
+    }
+    {
+        System.out.println("Dentro do bloco de inicialização de funcionario 2");
+    }
+
     public Funcionario(String Nome){
         super(Nome);
+        System.out.println("Dentro do construtor de funcionário");
     }
 
     public void imprime(){

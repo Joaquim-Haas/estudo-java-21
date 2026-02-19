@@ -5,11 +5,22 @@ public class Pessoa {
     protected String cpf;
     protected Endereco endereco; //protect vira publico para outras subclasses
 
-    public Pessoa(String Nome){
-        super(); //pode-se remover
-        this.nome = Nome;
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de pessoa");
     }
 
+    {
+        System.out.println("Dentro do bloco de incialização de pessoa 1");
+    }
+    {
+        System.out.println("Dentro do bloco de inicialização de pessoa 2");
+    }
+
+    public Pessoa(String Nome){
+        super(); //pode-se remover
+        System.out.println("Dentro do construtor pessoa");
+        this.nome = Nome;
+    }
 
     public void imprime(){
         System.out.println(this.nome);
