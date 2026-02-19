@@ -5,6 +5,12 @@ public class Pessoa {
     protected String cpf;
     protected Endereco endereco; //protect vira publico para outras subclasses
 
+    public Pessoa(String Nome){
+        super(); //pode-se remover
+        this.nome = Nome;
+    }
+
+
     public void imprime(){
         System.out.println(this.nome);
         System.out.println(this.cpf);

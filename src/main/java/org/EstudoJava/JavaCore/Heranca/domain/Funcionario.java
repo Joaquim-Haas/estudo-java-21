@@ -10,6 +10,10 @@ public class Funcionario extends Pessoa{ //classe que extende de pessoa
 
     private double salario;
 
+    public Funcionario(String Nome){
+        super(Nome);
+    }
+
     public void imprime(){
         super.imprime();
         System.out.println(this.salario);
