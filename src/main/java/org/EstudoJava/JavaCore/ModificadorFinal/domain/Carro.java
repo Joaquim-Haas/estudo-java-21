@@ -4,6 +4,7 @@ public class Carro {
     private String nome;
 
     public static final double VELOCIDADE_LIMITE = 250;
+    public final Comprador COMPRADOR = new Comprador();
     //exemplos abaixo
     public static final double VELOCIDADE_LIMITE_1;
     public final double VELOCIDADE_LIMITE_2;
