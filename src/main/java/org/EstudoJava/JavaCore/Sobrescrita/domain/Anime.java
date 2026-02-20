@@ -1,6 +1,6 @@
 package org.EstudoJava.JavaCore.Sobrescrita.domain;
 
-public class Anime extends Object{
+public class Anime{
     private String nome;
 
     @Override //Override para mudar o retorno

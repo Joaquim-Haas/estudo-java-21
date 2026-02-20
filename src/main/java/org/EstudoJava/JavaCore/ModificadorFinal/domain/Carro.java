@@ -1,0 +1,34 @@
+package org.EstudoJava.JavaCore.ModificadorFinal.domain;
+
+public class Carro {
+    private String nome;
+
+    public static final double VELOCIDADE_LIMITE = 250;
+    //exemplos abaixo
+    public static final double VELOCIDADE_LIMITE_1;
+    public final double VELOCIDADE_LIMITE_2;
+    public final double VELOCIDADE_LIMITE_3;
+
+    //snake-case para variaveis final
+    //final = constante, resumidamente
+
+    static{
+        VELOCIDADE_LIMITE_1 = 250; //static
+    }
+
+    {
+        VELOCIDADE_LIMITE_2 = 250;//public or non-static
+    }
+
+    public Carro(){
+        VELOCIDADE_LIMITE_3 = 250; //construtor para não final
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+}
