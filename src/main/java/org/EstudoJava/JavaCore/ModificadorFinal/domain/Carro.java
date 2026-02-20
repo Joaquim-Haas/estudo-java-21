@@ -1,6 +1,6 @@
 package org.EstudoJava.JavaCore.ModificadorFinal.domain;
 
-public class Carro {
+public class Carro { //public class final Carro, nao podera ser extendida
     private String nome;
 
     public static final double VELOCIDADE_LIMITE = 250;
@@ -23,6 +23,10 @@ public class Carro {
 
     public Carro(){
         VELOCIDADE_LIMITE_3 = 250; //construtor para não final
+    }
+
+    public final void imprime(){
+        System.out.println(this.nome);
     }
 
     public String getNome() {

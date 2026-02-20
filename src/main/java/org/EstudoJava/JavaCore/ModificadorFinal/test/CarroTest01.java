@@ -2,6 +2,7 @@ package org.EstudoJava.JavaCore.ModificadorFinal.test;
 
 import org.EstudoJava.JavaCore.ModificadorFinal.domain.Carro;
 import org.EstudoJava.JavaCore.ModificadorFinal.domain.Comprador;
+import org.EstudoJava.JavaCore.ModificadorFinal.domain.Ferrari;
 
 public class CarroTest01 {
     public static void main(String[] args) {
@@ -11,5 +12,9 @@ public class CarroTest01 {
         System.out.println(carro.COMPRADOR);
         carro.COMPRADOR.setNome("Kuririn");
         System.out.println(carro.COMPRADOR);
+
+        Ferrari ferrari = new Ferrari();
+        ferrari.setNome("F430");
+        ferrari.imprime();
     }
 }
