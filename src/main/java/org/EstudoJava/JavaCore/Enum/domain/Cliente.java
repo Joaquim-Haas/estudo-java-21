@@ -1,9 +1,6 @@
 package org.EstudoJava.JavaCore.Enum.domain;
 
 public class Cliente {
-    public enum TipoPagamento{
-        Debito, Credito;
-    }
 
     private String nome;
     private TipoCliente tipoCliente;
