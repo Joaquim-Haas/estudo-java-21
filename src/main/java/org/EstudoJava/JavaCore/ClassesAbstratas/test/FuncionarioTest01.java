@@ -12,6 +12,7 @@ public class FuncionarioTest01 {
         Desenvolvedor desenvolvedor = new Desenvolvedor("Joaquim", 3000);
         System.out.println(desenvolvedor);
 
-
+        gerente.imprime(); //herança de funcionario, e funcionario herda de pessoa abstract
+        desenvolvedor.imprime(); //herança de funcionario, e funcionario herda de pessoa abstract
     }
 }

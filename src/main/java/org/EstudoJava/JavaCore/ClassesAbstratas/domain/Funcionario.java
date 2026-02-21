@@ -1,6 +1,6 @@
 package org.EstudoJava.JavaCore.ClassesAbstratas.domain;
 
-public abstract class Funcionario { //classe template
+public abstract class Funcionario extends Pessoa{ //classe template
     protected String nome;
     protected double salario;
 
@@ -12,7 +12,12 @@ public abstract class Funcionario { //classe template
 
     public abstract void calculaBonus();
     //this.salario = this.salario + (this.salario * 0x) vira obrigação de quem extende;
-    
+
+    @Override
+    public void imprime() {
+        System.out.println("Imprimindo...");
+    }
+
     @Override
     public String toString() {
         return "Funcionario{" +
