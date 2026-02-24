@@ -11,7 +11,7 @@ public class ProdutoTest02 {
         System.out.println(produto.getNome());
         System.out.println(produto.getValor());
         System.out.println(produto.calcularImposto());
-        
+
         Produto produto1 = new Tomate("Tomate Caqui", 2);
         System.out.println(produto1.getNome());
         System.out.println(produto1.getValor());
