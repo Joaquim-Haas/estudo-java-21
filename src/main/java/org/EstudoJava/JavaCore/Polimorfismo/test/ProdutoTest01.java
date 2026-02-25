@@ -13,7 +13,6 @@ public class ProdutoTest01 {
         Televisao tv = new Televisao("LG 45\" ", 2455);
 
         CalculadoraImposto calculadoraImposto = new CalculadoraImposto();
-
         calculadoraImposto.calcularImposto(computador);
         calculadoraImposto.calcularImposto(tomate);
         calculadoraImposto.calcularImposto(tv);

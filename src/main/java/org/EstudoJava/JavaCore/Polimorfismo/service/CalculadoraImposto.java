@@ -13,6 +13,16 @@ public class CalculadoraImposto {
         System.out.println("Produto: " + produto.getNome());
         System.out.printf("Valor: R$%.2f \n", produto.getValor());
         System.out.printf("Imposto a ser pago: R$%.2f \n", imposto);
+
+        if(produto instanceof Tomate){
+            Tomate tomate = (Tomate) produto; //casting
+
+            String dataValidadeTomate = ((Tomate) produto).getDataValidade();
+            System.out.println("Validade do tomate: " + ((Tomate) produto).getDataValidade());
+
+            System.out.println("Validade do tomate: " + tomate.getDataValidade());
+        }
+
         System.out.println("\n");
     }
 }
