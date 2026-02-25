@@ -13,7 +13,7 @@ Repositório dedicado ao estudo da linguagem Java, seguindo a playlist **Maraton
 - [x] Tipos Primitivos e Estruturas de Controle
 - [X] Estruturas de Dados e Arrays
 - [X] Orientação a Objetos (Classes, Métodos, Sobrecarga)
-- [ ] Herança, Abstração e Polimorfismo
+- [X] Herança, Abstração e Polimorfismo
 - [ ] Tratamento de Exceções
 - [ ] Generics e Coleções (List, Map, Set)
 - [ ] Lambdas e Streams (Java Moderno)
