@@ -1,4 +1,4 @@
-package org.EstudoJava.JavaCore.Exception.test;
+package org.EstudoJava.JavaCore.Exception.error.test;
 
 public class StackOverflowTest01 {
     public static void main(String[] args) {
