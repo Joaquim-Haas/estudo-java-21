@@ -12,17 +12,12 @@ public class RuntimeExceptionTest05 {
             //throw new ArithmeticException();
             throw new RuntimeException();
         }
-        catch (ArrayIndexOutOfBoundsException e){
-            System.out.println("Dentro do ArrayIndexOutOfBoundsException");
+        catch (ArrayIndexOutOfBoundsException | IllegalArgumentException | ArithmeticException e){
+            System.out.println("Dentro do ArrayIndexOutOfBoundsException | IllegalArgumentException | ArithmeticException");
+            //e = new RuntimeException(); é impossível de fazer em multi catch
         }
         catch (IndexOutOfBoundsException e){
             System.out.println("Dentro do IndexOutOfBoundsException");
-        }
-        catch (IllegalArgumentException e){
-            System.out.println("Dentro do IllegalArgumentException");
-        }
-        catch (ArithmeticException e){
-            System.out.println("Dentro do ArithmeticException");
         }
         catch (RuntimeException e){
             System.out.println("Dentro do RuntimeException"); //a mais generica tem que ser a última para não tomar lugar dass outras exceptions
@@ -32,11 +27,9 @@ public class RuntimeExceptionTest05 {
             talvezLanceException(); //da pra usar IOException para pegar as duas exceptions;
             //Exception > IOException > SQLException, FileNotFoundException
         }
-        catch (SQLException e){
-
-        }
-        catch (FileNotFoundException e){
-
+        catch (Exception e){
+            e = new RuntimeException();
+            e.printStackTrace();
         }
     }
 
