@@ -7,7 +7,7 @@ public class RuntimeExceptionTest05 {
     public static void main(String[] args) {
 
         try{
-            //throw new IndexOutOfBoundsException();
+            //throw new IndexOutOfBounds Exception();
             //throw new ArrayIndexOutOfBoundsException();
             //throw new ArithmeticException();
             throw new RuntimeException();
