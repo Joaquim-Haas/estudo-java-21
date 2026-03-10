@@ -14,6 +14,6 @@ Repositório dedicado ao estudo da linguagem Java, seguindo a playlist **Maraton
 - [X] Estruturas de Dados e Arrays
 - [X] Orientação a Objetos (Classes, Métodos, Sobrecarga)
 - [X] Herança, Abstração e Polimorfismo
-- [ ] Tratamento de Exceções
+- [X] Tratamento de Exceções
 - [ ] Generics e Coleções (List, Map, Set)
 - [ ] Lambdas e Streams (Java Moderno)
