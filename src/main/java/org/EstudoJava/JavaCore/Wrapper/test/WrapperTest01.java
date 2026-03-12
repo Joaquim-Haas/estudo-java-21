@@ -33,8 +33,6 @@ public class WrapperTest01 {
         boolean verdadeiro4 = Boolean.parseBoolean(null);
         System.out.println(verdadeiro4);
 
-
-
         System.out.println(Character.isDigit('A'));
         System.out.println(Character.isDigit('9'));
         System.out.println(Character.isLetterOrDigit('#'));
