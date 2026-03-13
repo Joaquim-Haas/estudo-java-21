@@ -7,7 +7,7 @@ public class StringTest01 {
         String nome2 = "Joaquim";
 
         System.out.println(nome);
-        nome = nome.concat(" Haas");
+        nome = nome.concat(" Haas"); //nome += " Haas"
         System.out.println(nome);
         System.out.println(nome == nome2);
 
@@ -16,5 +16,6 @@ public class StringTest01 {
                                                      // 3 - string no pool de string
         System.out.println(nome2 == nome3);
         System.out.println(nome2 == nome3.intern());
+        // xxxx == yyyy, o == é usado para comparar referências
     }
 }
