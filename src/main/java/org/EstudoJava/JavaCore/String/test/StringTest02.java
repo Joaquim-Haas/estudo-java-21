@@ -23,7 +23,7 @@ public class StringTest02 {
         System.out.println(numeros.substring(0,2));
         System.out.println(numeros.substring(3));
         //System.out.println(numeros.substring(3,numeros.length())); a forma de cima é mais simples
- 
+
         System.out.println(nome);
         System.out.println(nome.trim()); //corta espaços em branco
     }
