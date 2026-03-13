@@ -5,7 +5,7 @@ public class StringPerfomanceTest01 {
         //evitar trabalhar com microdesempenho, pois só irá aumentar a complexidade
         //stringbuilder e stringbuffer é necessário em certas ocasiões, como sistemas grandes
         //impactados pelo desempenho
-        
+
         long inicio = System.currentTimeMillis();
         concatString(100_000);
         long fim = System.currentTimeMillis();
