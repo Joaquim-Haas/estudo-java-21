@@ -1,4 +1,4 @@
-package org.EstudoJava.JavaCore.Formatação.test;
+package org.EstudoJava.JavaCore.Dates.test;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
