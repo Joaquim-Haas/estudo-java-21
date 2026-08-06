@@ -1,4 +1,4 @@
-package org.EstudoJava.JavaCore.Formatação.test;
+package org.EstudoJava.JavaCore.Formatacao.test;
 
 import java.util.Locale;
 

@@ -1,10 +1,10 @@
-package org.EstudoJava.JavaCore.Formatação.test;
+package org.EstudoJava.JavaCore.Formatacao.test;
 
 import java.text.NumberFormat;
 import java.text.ParseException;
 import java.util.Locale;
 
-public class NumberFormatTest02 {
+public class NumberFormatTest01 {
     public static void main(String[] args) {
 
         Locale localeDef = Locale.getDefault();
@@ -14,22 +14,24 @@ public class NumberFormatTest02 {
 
         NumberFormat[] nfA = new NumberFormat[4];
 
-        nfA[0] = NumberFormat.getCurrencyInstance();
-        nfA[1] = NumberFormat.getCurrencyInstance(localeBR);
-        nfA[2] = NumberFormat.getCurrencyInstance(localeJP);
-        nfA[3] = NumberFormat.getCurrencyInstance(localeIt);
+        nfA[0] = NumberFormat.getInstance();
+        nfA[1] = NumberFormat.getInstance(localeBR);
+        nfA[2] = NumberFormat.getInstance(localeJP);
+        nfA[3] = NumberFormat.getInstance(localeIt);
 
-        double valor = 10_000.2130;
+        double valor = 1_000.2130;
 
         for(NumberFormat numbForm : nfA){
             System.out.println(numbForm.getMaximumFractionDigits());
+            numbForm.setMaximumFractionDigits(2);
             System.out.println(numbForm.format(valor));
         }
 
-        String valorString = "1.000.2130";
+        String valorString = "1_000.2130";
+        //Double.parseDouble();
 
         try {
-            nfA[1].parse(valorString);
+            nfA[0].parse(valorString);
         } catch (ParseException e) {
             //throw new RuntimeException(e);
             e.printStackTrace();
